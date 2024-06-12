@@ -24,6 +24,7 @@
 <h1>本日の気象情報</h1>
 <div id="precipitation"></div>
 <py-script output ="precipitation">
+await micropip.install("pandas") 
 import pandas as pd
 import matplotlib.pyplot as plt
 
