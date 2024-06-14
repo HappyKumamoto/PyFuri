@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>振り駒アプリ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href=" furigoma.css" />
+  <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+  <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+  
+<body>
+<h1>振り駒の結果</h1>
+  
+<div id="furi"></div>
+  
+<py-script output ="furi">
+  
+import random
+  
+komas= ("歩" , "と" ,"歩" , "と" ,"歩" , "と" ,"歩" , "と" ,"歩" , "と" )
+  
+a = random.sample(komas , 5)
+  
+pyscript.write("furi" , a )
+  
+</py-script>
+  
+</body>
+</html>
