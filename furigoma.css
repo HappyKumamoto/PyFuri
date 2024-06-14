@@ -1,6 +1,9 @@
 body {
   text-align: center;
   background-color: #FFCC33;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  
 }
 
 .btn {
