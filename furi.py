@@ -6,7 +6,7 @@ komas= ("歩","と","歩","と","歩","と","歩","と","歩","と")
 #10の要素から5を無作為に選び出す
 kekka = random.sample(komas , 5)
 
-#結果のリストをシンプルにする
+#選び出された5要素を連結
 result= ''
 for i in range(len(kekka)):
     result += kekka[i]
