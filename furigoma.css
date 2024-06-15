@@ -22,4 +22,13 @@ body {
   border        : none;    /* 枠の指定 */
   text-decoration:none  /* 下線を消す */
 }
+
+. {
+  display: inline-block;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.4em;
+  padding: 5px;
+  background:#FFD9D7;
+}
   
