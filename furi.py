@@ -6,5 +6,10 @@ komas= ("歩","と","歩","と","歩","と","歩","と","歩","と")
 #10の要素から5を無作為に選び出す
 kekka = random.sample(komas , 5)
 
-#選び出した結果を HTML の <py-script>タグ に表示させる
-pyscript.write("furi" , kekka )
+#結果のリストをシンプルにする
+result= ''
+for i in range(len(kekka)):
+    result += kekka[i]
+
+# HTML の <py-script>タグ に表示させる
+pyscript.write("furi" , result )
