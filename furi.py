@@ -27,6 +27,6 @@ if countF > countT:  #歩の枚数が多いとき
     sente = '上座が先手となりました'
     pyscript.write("hantei" , sente)
 else:                #との枚数が多いとき
-    sente = '下座が先天となりました'
+    sente = '下座が先手となりました'
     pyscript.write("hantei" , sente) 
 
