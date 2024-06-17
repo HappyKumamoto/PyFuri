@@ -1,5 +1,4 @@
 import random
-#import count
 
 #「歩兵」駒の表と裏の要素を五枚分用意
 komas= ("歩 ","と ","歩 ","と ","歩 ","と ","歩 ","と ","歩 ","と ")
@@ -18,7 +17,7 @@ pyscript.write("furi" , result )
 #判定のために '歩' と ’と' の数を数える
 countF = countT = 0
 for i in range(len(kekka)):
-    if kekka[i] == '歩':
+    if kekka[i] == '歩 ':
         countF += 1
     else:
         countT += 1
