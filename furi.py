@@ -11,5 +11,22 @@ result= ''
 for i in range(len(kekka)):
     result += kekka[i]
 
-# HTML の <py-script>タグ に表示させる
+# HTML の <py-script>'furi' に表示
 pyscript.write("furi" , result )
+
+#どちらが先手か判定を判断
+countF = countT = 0
+for i in range(len(kekka)):
+    if kekka[i] == '歩':
+        countF += 1
+    else:
+        countT += 1
+
+# HTML<py-script>タグの'hantei'に表示
+if countF > countT:
+    sente = '上座'
+    pyscript.write("hantei" , sente)
+else:
+    sente = '下座'
+    pyscript.write("hantei" , sente)
+
