@@ -16,18 +16,18 @@ for i in range(len(kekka)):
 pyscript.write("furi" , result )
 
 #判定のために '歩' と ’と' の数を数える
-countF = countT = 0
-for i in range(len(kekka)):
-    if kekka[i] == '歩':
+countF , countT = 0
+for i in range(len(result)):
+    if resust[i] == '歩':
         countF += 1
     else:
         countT += 1
 
 # 判定を<py-script>の'hantei'に表示
-if countF > countT:
+if countF > countT:  #歩の枚数が多いとき
     sente = '上座'
     pyscript.write("hantei" , sente)
-else:
+else:                #との枚数が多いとき
     sente = '下座'
     pyscript.write("hantei" , sente) 
 
