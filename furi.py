@@ -14,7 +14,7 @@ for i in range(len(kekka)):
 # HTMLの<py-script>の'furi' に表示
 pyscript.write("furi" , result )
 
-#判定のために '歩' と ’と' の数を数える
+#判定のために 「歩」 と 「と」 の数を数える
 countF = countT = 0
 for i in range(len(kekka)):
     if kekka[i] == '歩 ':
