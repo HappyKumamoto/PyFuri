@@ -24,9 +24,9 @@ for i in range(len(kekka)):
 
 # 判定を<py-script>の'hantei'に表示
 if countF > countT:  #歩の枚数が多いとき
-    sente = '上座'
+    sente = '上座が先手となりました'
     pyscript.write("hantei" , sente)
 else:                #との枚数が多いとき
-    sente = '下座'
+    sente = '下座が先天となりました'
     pyscript.write("hantei" , sente) 
 
