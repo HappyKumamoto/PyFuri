@@ -1,1 +1,2 @@
 # furigoma
+PyScriptの練習
